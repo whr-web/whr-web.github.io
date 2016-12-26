@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="../css/swiper-3.3.1.min.css" />
 		<link rel="stylesheet" href="../css/news2.css" />
 		<link rel="stylesheet" href="../css/kefu.css" />
+		<link rel="stylesheet" href="../css/max_pingmu.css" />
 		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" src="../js/dingbu.js" ></script>
 		<script type="text/javascript" src="../js/toper.js" ></script>
@@ -26,6 +27,19 @@
 				<li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="../images/side_icon05.png"></a></li>
 			</ul>
 		</div>
+		<!--照片点击div-->
+		<div id="max_pingmu" class="max_pingmu pt_left_an">
+			<div class="poto pt_left_an">
+					<div class="col-xs-12 pt_left_an" >
+						<img id="pt" class="pt pt_left_an" src="../img/news2/content_cn_picture1.jpg"/>
+						<h4 id="close_g" class="close_g">关闭</h4>
+						<p id="next_g" class="next_g">></p>
+						<p id="pre_g" class="pre_g"><</p>
+					</div>
+			</div>
+		</div>
+		
+	
 		<!--头部-->
 		<div class="toper">
 			<div class="top_left">
@@ -92,9 +106,9 @@
 				<ul id="content_cn_picture" class="content_cn_picture">
 					<li>
 						<a href="#">
-							<img  src="../img/news2/content_cn_picture1.jpg"/>
+							<img   src="../img/news2/content_cn_picture1.jpg"/>
 						</a>
-						<a style="display: block;" href="#">90后“女神老师”晒新照</a>
+						<a style="display: block;"  href="#">90后“女神老师”晒新照</a>
 					</li>
 					<li class="pic_midd">
 						<a href="#">
@@ -286,6 +300,18 @@
 		     	$("#content_cn_picture2 ").children("li").addClass("change_a1");
 		     	$(this).removeClass("change_a1");
 		     });
+		     
+		     
+			$("#content_cn_picture img").click(function(){
+				$("#max_pingmu").css("display","block");
+				$("#pt").attr('src',$(this).attr('src'));
+			})
+			$("#close_g").click(function(){
+				$("#max_pingmu").css("display","none");
+			});
+			
+			
+			
 		</script>
 	</body>
 </html>

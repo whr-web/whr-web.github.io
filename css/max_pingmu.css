@@ -1,0 +1,75 @@
+.max_pingmu{
+	display: none;
+	z-index: 1000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+}
+.poto{
+	padding: 50px;
+	width: 1000px;
+	height: 710px;	
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.poto img{
+	width: 100%;
+	border-radius: 50px;
+	box-shadow: 0px 0px 60px #CCCCCC;
+	}
+.close_g{
+	position: fixed;
+	top:10px;
+	right: 20px;
+	color: white;
+	cursor: pointer;
+	border: 1px solid white;
+	padding: 4px 5px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #CCCCCC;
+}
+.close_g:hover{
+	box-shadow: 0px 0px 40px #666666;
+}
+.next_g,.pre_g{
+	cursor: pointer;
+	position: absolute;
+	color: white;
+	font-size: 30px;
+	border: 1px solid #CCCCCC;
+	padding: 20px 5px;
+	top: 270px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px #CCCCCC;
+}
+.next_g{
+	right: -40px;
+}
+.pre_g{
+	left: -40px;
+}
+.next_g:hover{
+	box-shadow: 0px 0px 40px #666666;
+}
+.pre_g:hover{
+	box-shadow: 0px 0px 40px #666666;
+}
+.pt_left_an{
+	animation: myPt_left_an 2s;
+	-webkit-animation:  myPt_left_an 2s;
+	-moz-animation:  myPt_left_an 2s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+@keyframes  myPt_left_an {
+	0%{
+		width: 0px;
+		height: 0px;
+	}
+	100%{
+		width: 100%;
+		height: 100%;
+	}
+}
