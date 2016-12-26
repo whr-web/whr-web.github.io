@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="../css/toper.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
+		<link rel="stylesheet" href="../SYcss/news.css" />
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/kefu.css" />
+		<link rel="stylesheet" href="../css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="../css/news1.css" />
+		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../js/dingbu.js" ></script>
+		<script type="text/javascript" src="../js/toper.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-3.1.1.min.js"></script>
+		<script type="text/javascript" src="../js/swiper-3.3.1.min.js"></script>
+
+		<style>
+			html,
+			body {
+				position: relative;
+			}
+			.swiper-container {
+				border: 1px solid #CCCCCC;
+				border-radius: 20px;
+				width: 1000px;
+				height: 500px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+
+	<body onload="time()">
+		<!--返回顶部-->
+		<div class="side">
+			<ul>
+				<li><a href="#" target="_blank"><div class="sidebox"><img src="../images/side_icon01.png">首页分享</div></a></li>
+				<li><a href="#" target="_blank"><div class="sidebox"><img src="../images/side_icon04.png">QQ</div></a></li>
+				<li><a href="#" target="_blank"><div class="sidebox"><img src="../images/weixin.png">微信</div></a></li>
+				<li><a href="#" target="_blank"><div class="sidebox"><img src="../images/side_icon03.png">新浪微博</div></a></li>
+				<li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="../images/side_icon05.png"></a></li>
+			</ul>
+		</div>
+		<!--头部-->
+		<div class="toper">
+			<div class="top_left">
+				<a href="#"><img src="../img/toper/logo.jpg" /></a>
+				<a class="titer" href="#">新闻网</a>
+			</div>
+			<div class="col-xs-4 sousuo" style="float: right; ">
+				<div class="input-group">
+					<input type="text" style="border: 2px solid #006833;" class="form-control" placeholder="Search">
+					<span class="input-group-btn">
+       				 	<button class="btn btn-default" style="border: 2px solid #006833;height: 34px;background:#006833 ;color: white;" type="button">搜&nbsp;索</button>
+    				 </span>
+
+				</div>
+
+			</div>
+			<div class="right_showtime">
+				<img style="float: left;" src="../img/toper/time.jpg" />
+				<div id="showtime" style="width: 250px;"></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="news_title">
+			<div class="title">
+				<ul id="title">
+					<li class="change">
+						<a style="color: white;" href="junshi.html">聚焦北疆</a>
+					</li>
+					<li>
+						<a href="beijianghuati.html">北疆话题</a>
+					</li>
+					<li>
+						<a href="beijiangguancha.html">北疆观察</a>
+					</li>
+					<li>
+						<a href="mingjialuntan.html">名家论坛</a>
+					</li>
+					<li>
+						<a href="lvsebeijiang.html">绿色北疆</a>
+					</li>
+					<li>
+						<a href="lvcaolantain.html">绿草蓝天</a>
+					</li>
+					<li>
+						<a href="#">新媒前沿</a>
+					</li>
+					<li style="margin-left: 60px;background: white;">
+						<a href="#"><img style="float: left;" src="../img/toper/title1.jpg" /></a>
+					</li>
+					<li style="width: 40px; float: right;margin-right: 20px;border-left: 1px solid #eaeaea;background: white;">
+						<a href="../index.html"><img style="float: right;" src="../img/toper/main.jpg" /></a>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+		<!--内容-->
+		<div class="content">
+
+				
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><a href="#"><img src="../img/聚焦北疆/index/1.jpg"/></a></div>
+							<div class="swiper-slide"><a href="#"><img src="../img/聚焦北疆/index/2.jpg"/></a></div>
+							<div class="swiper-slide"><a href="#"><img src="../img/聚焦北疆/index/1.jpg"/></a></div>
+							<div class="swiper-slide"><a href="#"><img src="../img/聚焦北疆/index/2.jpg"/></a></div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+					
+					<a href="beijianghuati.html" class="news_div" >
+						<img  src="../img/新闻中心/index/guonei.jpg"/>
+						<div class="news_div_cn">北疆话题频道</div>
+					</a>
+				
+					<a href="beijiangguancha.html" class="news_div">
+						<img  src="../img/新闻中心/index/guonei.jpg"/>
+						<div class="news_div_cn">北疆观察频道</div>
+					</a>
+					
+					<a href="mingjialuntan.html" class="news_div">
+						<img  src="../img/新闻中心/index/guonei.jpg"/>
+						<div class="news_div_cn">名家论坛频道</div>
+					</a>
+					
+					<a href="lvsebeijiang.html" class="news_div">
+						<img  src="../img/新闻中心/index/guonei.jpg"/>
+						<div class="news_div_cn">绿色北疆频道</div>
+					</a>
+					
+					<a href="lvcaolantain.html" class="news_div">
+						<img  src="../img/新闻中心/index/guonei.jpg"/>
+						<div class="news_div_cn">绿草蓝天频道</div>
+					</a>
+					
+					<a href="#" class="news_div">
+						<img  src="../img/新闻中心/index/guonei.jpg"/>
+						<div class="news_div_cn">新媒前沿频道</div>
+					</a>
+			</div>
+			
+		<div class="clear"></div>
+		<!--底部-->
+		<div class="footer">
+				
+			<div class="footer_top">
+				<ul>
+					<li>
+						<a href="#" style="color: #06427a;font-size: 14px;font-weight: bold;">友情链接:</a>
+					</li>
+					<li>
+						<a href="#">人民网</a>
+					</li>
+					<li>
+						<a href="#">新华网</a>
+					</li>
+					<li>
+						<a href="#">中国网</a>
+					</li>
+					<li>
+						<a href="#">中国日报网</a>
+					</li>
+					<li>
+						<a href="#">国际在线</a>
+					</li>
+					<li>
+						<a href="#">CNTV</a>
+					</li>
+					<li>
+						<a href="#">中青网</a>
+					</li>
+					<li>
+						<a href="#">中国台湾网</a>
+					</li>
+					<li>
+						<a href="#">央广网</a>
+					</li>
+					<li>
+						<a href="#">中国西藏网</a>
+					</li>
+					<li>
+						<a href="#">中新网</a>
+					</li>
+					<li>
+						<a href="#">中工网</a>
+					</li>
+					<li>
+						<a href="#">光明网</a>
+					</li>
+					<li>
+						<a href="#">百度</a>
+					</li>
+					<li>
+						<a href="#">新浪</a>
+					</li>
+					<li>
+						<a href="#">搜狐</a>
+					</li>
+					<li>
+						<a href="#">凤凰</a>
+					</li>
+					<li>
+						<a href="#">和讯</a>
+					</li>
+					<li>
+						<a href="#">腾讯</a>
+					</li>
+					<li>
+						<a href="#">国搜</a>
+					</li>
+					<li>
+						<a href="#">好搜</a>
+					</li>
+					<li>
+						<a href="#">金融界</a>
+					</li>
+					<br />
+					<li style="width:63px;height: 13px;">
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#">国家机关</a>
+					</li>
+					<li>
+						<a href="#">中国网信网</a>
+					</li>
+					<li>
+						<a href="#">中央纪委</a>
+					</li>
+					<li>
+						<a href="#">金融机构</a>
+					</li>
+					<li>
+						<a href="#">重点企业</a>
+					</li>
+					<li>
+						<a href="#">地方重点网站</a>
+					</li>
+					<li>
+						<a href="#">四川新闻网</a>
+					</li>
+					<li>
+						<a href="#">华龙网</a>
+					</li>
+					<li>
+						<a href="#">东北欧新闻网</a>
+					</li>
+					<li>
+						<a href="#">大众网</a>
+					</li>
+					<li>
+						<a href="#">大洋网</a>
+					</li>
+					<li>
+						<a href="#">齐鲁网</a>
+					</li>
+					<li>
+						<a href="#">东南网</a>
+					</li>
+					<li>
+						<a href="#">红网</a>
+					</li>
+					<li>
+						<a href="#">华声在线</a>
+					</li>
+					<li>
+						<a href="#">凯风网</a>
+					</li>
+					<li>
+						<a href="#">更多>></a>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+		<div class="bg">
+			<div class="footer_bottom">
+				<p style="padding-top: 10px;">
+					<a href="#">关于北疆在线</a>
+					<a href="#">-</a>
+					<a href="#">网站大事记</a>
+					<a href="#">-</a>
+					<a href="#" style="color: #663401;">网站诚聘</a>
+					<a href="#">-</a>
+					<a href="#">版权声明</a>
+					<a href="#">-</a>
+					<a href="#">互联网视听节目服务自律公约</a>
+					<a href="#">-</a>
+					<a href="#">广告服务</a>
+					<a href="#">-</a>
+					<a href="#">友情链接</a>
+					<a href="#">-</a>
+					<a href="#">纠错邮箱</a>
+				</p>
+				<p>
+					<a href="#">友情赞助：内蒙古青城网络科技有限公司</a>
+				</p>
+				<p class="footer_bottom_p">
+					<a href="#">北疆在线</a>
+					<a href="#"><img src="../img/footer/footer_bottom1.jpg" />版权所有</a>
+					<a href="#">蒙ICP证140554号</a>
+					<a href="#">网络传播视听节目许可证(0107190)</a>
+					<a href="#"><img src="../img/footer/footer_bottom2.jpg" />违法和不良信息举报中心</a>
+					<a href="#">举报电话:18510915000</a>
+				</p>
+				<p>
+					<a href="#">蒙公网安备110102000527</a>
+				</p>
+				<p>
+					<a href="#"><img src="../img/footer/footer_bottom3.jpg" /></a>
+				</p>
+
+			</div>
+		</div>
+			
+			
+		<!-- Swiper JS -->
+			<script src="../js/swiper-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			$("#title li").click(function() {
+				if($(this).className != "change") {
+					$(this).children().css("color", "white");
+					$(this).children().css("text-decoration", "none");
+					$(this).addClass("change");
+					$(this).siblings().removeClass("change");
+					$(this).siblings().children().css("color", "black");
+				}
+			});
+			
+			
+			
+			
+			
+
+//			<!-- Initialize Swiper -->
+				var swiper = new Swiper('.swiper-container', {
+					pagination: '.swiper-pagination',
+					direction: 'vertical',
+					slidesPerView: 1,
+					paginationClickable: true,
+					spaceBetween: 30,
+					mousewheelControl: true,
+					autoplay: 2000,
+					speed: 2000,
+					 autoplayDisableOnInteraction: false
+				});
+				
+				
+				$(".news_div").mouseover(function(){
+					$(this).children(".news_div_cn").removeClass("change_a1");
+					$(this).children("img").removeClass("change_img1");
+					$(this).children("img").addClass("change_img");
+					$(this).children(".news_div_cn").addClass("change_a");
+				});
+				
+				$(".news_div").mouseout(function(){
+					$(this).children("img").removeClass("change_img");
+					$(this).children("img").addClass("change_img1");
+					$(this).children(".news_div_cn").removeClass("change_a");
+					$(this).children(".news_div_cn").addClass("change_a1");
+				});
+
+		</script>
+	</body>
+
+</html>

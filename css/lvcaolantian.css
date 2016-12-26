@@ -1,0 +1,64 @@
+.photos{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 20px 0px;
+	box-sizing: border-box;
+}
+.photo{
+	text-align: center;
+	overflow: hidden;
+	text-align: center;
+	width: 230px;
+	height: 300px;
+	border: 1px solid #CCCCCC;
+	float: left;
+	margin-left: 16px;
+	margin-top: 20px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 15px #CCCCCC;
+	position: relative;
+}
+.photo_cn{
+	color: black;
+	font-size: 20px;
+	padding: 10px 5px;
+	width: 20px;
+	height: 100px;
+	position: absolute;
+	z-index: 100;
+	top: 0px;
+}
+.changePhoto_over{
+	animation: myChangePhoto 1s;
+	-webkit-animation: myChangePhoto 1s;
+	-moz-animation: myChangePhoto 1s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+@-webkit-keyframes myChangePhoto {
+	0%{
+		transform: rotate(0deg);
+		
+	}
+	100%{
+		transform: rotate(6deg);
+	}
+}
+.changePhoto_out{
+	animation: myChangePhotoOut 1s;
+	-webkit-animation: myChangePhotoOut 1s;
+	-moz-animation: myChangePhotoOut 1s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+@-webkit-keyframes myChangePhotoOut {
+	0%{
+		transform: rotate(6deg);
+		
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}

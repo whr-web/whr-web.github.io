@@ -1,0 +1,133 @@
+.content{
+	width: 1000px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 10px 0px;
+}
+.renwu{
+	margin-top: 40px;
+}
+.news_cn{
+	box-sizing: border-box;
+	margin: 0 auto;
+	display: block;
+	width: 950px;
+	height: 300px;
+	border-radius: 15px;
+	margin-top:15px;
+}
+.renwu_img{
+	box-sizing: border-box;
+	width: 300px;
+	height: 300px;
+	border-radius: 7px;
+	float: left;
+	margin-left: 1px;
+	position: relative;
+	box-shadow: 0px 0px 8px #CCCCCC;
+	color: black;
+}
+.renwu_cn{
+	box-sizing: border-box;
+	width: 600px;
+	height: 300px;
+	border-radius: 7px;
+	float: left;
+	position: relative;
+	box-shadow: 0px 0px 8px #CCCCCC;
+	padding: 20px;
+}
+.renwu_img_on{
+	animation: myRenwu 1s;
+	-webkit-animation: myRenwu 1s;
+	-moz-animation: myRenwu 1s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+@-webkit-keyframes myRenwu {
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0.6;
+	}
+}
+
+.renwu_img_down{
+	animation: myRenwu1 1s;
+	-webkit-animation: myRenwu1 1s;
+	-moz-animation: myRenwu1 1s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+@-webkit-keyframes myRenwu1 {
+	0%{
+		opacity: 0.6;
+	}
+	100%{
+		opacity:1;
+	}
+}
+.go{
+	position: absolute;
+	animation: myGo 4s;
+	-moz-animation:myGo 4s ;
+	-webkit-animation: myGo 4s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+}
+@keyframes myGo{
+	0%{
+		top: -16px;
+		left: -11px;
+	}
+	25%{
+		top: -16px;
+		left: 290px;
+		
+	}
+	50%{
+		left: 290px;
+		top: 286px;
+	}
+	75%{
+		top: 286px;
+		left: -11px;
+	}
+	100%{
+		left: -11px;
+		top: -16px;
+	}
+}
+.gog{
+	position: absolute;
+	animation: myGog 4s infinite ;
+	-moz-animation:myGog 4s ;
+	-webkit-animation: myGog 4s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+}
+@keyframes myGog{
+	0%{
+		right: -11px;
+		top: -16px;
+	}
+	25%{
+		right: 589px;
+		top: -16px;
+	}
+	50%{
+		right: 589px;
+		top: 286px;
+	}
+	75%{
+		top: 286px;
+		right: -11px;
+	}
+	100%{
+		right: -11px;
+		top: -16px;
+	}
+}

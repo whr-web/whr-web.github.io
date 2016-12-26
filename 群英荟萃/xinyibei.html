@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="../css/toper.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
+		<link rel="stylesheet" href="../css/qunyinghuicui.css" />
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="../css/news1.css" />
+		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../js/toper.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-3.1.1.min.js"></script>
+		<script type="text/javascript" src="../js/swiper-3.3.1.min.js"></script>
+
+		<style>
+			html,
+			body {
+				position: relative;
+			}
+			.swiper-container {
+				border: 1px solid #CCCCCC;
+				border-radius: 20px;
+				width: 1000px;
+				height: 500px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+
+	<body onload="time()">
+		<!--头部-->
+		<div class="toper">
+			<div class="top_left">
+				<a href="#"><img src="../img/toper/logo.jpg" /></a>
+				<a class="titer" href="#">新闻网</a>
+			</div>
+			<div class="col-xs-4 sousuo" style="float: right; ">
+				<div class="input-group">
+					<input type="text" style="border: 2px solid #006833;" class="form-control" placeholder="Search">
+					<span class="input-group-btn">
+       				 	<button class="btn btn-default" style="border: 2px solid #006833;height: 34px;background:#006833 ;color: white;" type="button">搜&nbsp;索</button>
+    				 </span>
+
+				</div>
+
+			</div>
+			<div class="right_showtime">
+				<img style="float: left;" src="../img/toper/time.jpg" />
+				<div id="showtime" style="width: 250px;"></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="news_title">
+			<div class="title">
+				<ul id="title">
+					<li>
+						<a href="index.html">群英荟萃</a>
+					</li>
+					<li>
+						<a href="chuangyezhe.html">创业者</a>
+					</li>
+					<li>
+						<a href="zhengmiankong.html">政面孔</a>
+					</li>
+					<li>
+						<a href="laoyibei.html">老一辈</a>
+					</li>
+					<li class="change">
+						<a style="color: white;" href="xinyibei.html">星一辈</a>
+					</li>
+					<li>
+						<a href="laodongkaimo.html">劳动楷模</a>
+					</li>
+					<li>
+						<a href="xianjinjiti.html">先进集体</a>
+					</li>
+					<li style="margin-left: 60px;background: white;">
+						<a href="#"><img style="float: left;" src="../img/toper/title1.jpg" /></a>
+					</li>
+					<li style="width: 40px; float: right;margin-right: 20px;border-left: 1px solid #eaeaea;background: white;">
+						<a href="../index.html"><img style="float: right;" src="../img/toper/main.jpg" /></a>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+		<!--内容-->
+		<div class="content">
+
+				
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="../img/群英荟萃/群英荟萃首页/首页_01.jpg"></div>
+							<div class="swiper-slide"><img src="../img/群英荟萃/群英荟萃首页/首页_02.jpg"></div>
+							<div class="swiper-slide"><img src="../img/群英荟萃/群英荟萃首页/首页_03.jpg"></div>
+							<div class="swiper-slide"><img src="../img/群英荟萃/群英荟萃首页/首页_04.jpg"></div>
+							<div class="swiper-slide"><img src="../img/群英荟萃/群英荟萃首页/首页_05.jpg"></div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="renwu">
+						<a class="news_cn" href="#">
+							<div class="renwu_img">
+								<img id="go" class="go" src="../img/群英荟萃/star.png"/>
+								<img src="../img/群英荟萃/星一辈/星一辈_04.jpg" />
+							</div>
+							<div class="renwu_cn" style="margin-left: 20px;">
+								<img id="gog" class="gog" src="../img/群英荟萃/star.png"/>
+								<h4>姓名：李连杰</h4>
+								<h4 style="line-height: 1.5em;">个人介绍：</h5>
+								<h4 style="line-height: 1.5em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;李连杰（Jet Li），1963年4月26日生于中国北京市，演员、武术家、慈善家、商人。1975年至1979年连续五年获得中国武术全能冠军，1982年主演电影《少林寺》使其知名度提升，1991年后主演了《黄飞鸿》系列电影，塑造出了方世玉、张三丰、霍元甲、陈真、令狐冲等角色。1997年后到美国好莱坞发展，期间主演了《致命罗密欧》、《龙之吻》、《敢死队》系列等多部电影。2013年获得《中华武术》三十年颁奖盛典颁发的“中华武术30年最具武术影响力人物奖”。</h4>
+							</div>
+						</a>
+						<a class="news_cn"  href="#">
+							<div class="renwu_cn">
+								<img id="gog" class="gog" src="../img/群英荟萃/star.png"/>
+								<h4>姓名：张杰</h4>
+								<h4 style="line-height: 1.5em;">个人介绍：</h5>
+								<h4 style="line-height: 1.5em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;张杰，1982年12月20日出生于四川成都，毕业于四川师范大学，中国内地流行歌手。除歌唱事业，张杰也热心慈善公益，2012年捐资200万作为北斗星空爱心基金创始基金，启动“张杰音乐梦想教室”公益项目，并获得“中国儿童慈善奖—-突出贡献奖”。至2016年10月已陆续在全国各地建立了29所“张杰音乐梦想教室”。</h4>
+							</div>
+							<div class="renwu_img" style="margin-left: 20px;">
+								<img id="go" class="go" src="../img/群英荟萃/star.png"/>
+								<img src="../img/群英荟萃/星一辈/星一辈_01.png" />
+							</div>
+							
+						</a>
+						<a class="news_cn" href="#">
+							<div class="renwu_img">
+								<img id="go" class="go" src="../img/群英荟萃/star.png"/>
+								<img src="../img/群英荟萃/星一辈/星一辈_02.jpg" />
+							</div>
+							<div class="renwu_cn" style="margin-left: 20px;">
+								<img id="gog" class="gog" src="../img/群英荟萃/star.png"/>
+								<h4>姓名：黄晓明</h4>
+								<h4 style="line-height: 1.5em;">个人介绍：</h5>
+								<h4 style="line-height: 1.5em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黄晓明，1977年11月13日生于山东省青岛市市南区，中国内地男演员、歌手、商人。毕业于北京电影学院表演系。黄晓明热心公益慈善。2008年起担任中国儿童少年基金会形象大使。2009年担任联合国儿童基金香港委员会儿童基金会爱心大使。2014年当选山东省十大杰出青年；同年成立“黄晓明明天爱心基金”。2016年在《中国慈善家》评选的“中国慈善名人榜“中排名第一位。</h4>
+							</div>
+						</a>
+						<a class="news_cn"  href="#">
+							<div class="renwu_cn">
+								<img id="gog" class="gog" src="../img/群英荟萃/star.png"/>
+								<h4>姓名：成龙</h4>
+								<h4 style="line-height: 1.5em;">个人介绍：</h5>
+								<h4 style="line-height: 1.5em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成龙，1954年4月7日出生于香港中西区，中国香港男演员、导演、动作指导、制作人、编剧、歌手。演艺事业外，成龙热心公益事业。2004年担任联合国儿童基金会亲善大使。2006年入选《福布斯》杂志评出的“十大慈善之星”。</h4>
+							</div>
+							<div class="renwu_img" style="margin-left: 20px;">
+								<img id="go" class="go" src="../img/群英荟萃/star.png"/>
+								<img src="../img/群英荟萃/星一辈/星一辈_03.jpg" />
+							</div>
+							
+						</a>
+					</div>
+			</div>
+			
+		<div class="clear"></div>
+		<!--底部-->
+		<div class="footer">
+				
+			<div class="footer_top">
+				<ul>
+					<li>
+						<a href="#" style="color: #06427a;font-size: 14px;font-weight: bold;">友情链接:</a>
+					</li>
+					<li>
+						<a href="#">人民网</a>
+					</li>
+					<li>
+						<a href="#">新华网</a>
+					</li>
+					<li>
+						<a href="#">中国网</a>
+					</li>
+					<li>
+						<a href="#">中国日报网</a>
+					</li>
+					<li>
+						<a href="#">国际在线</a>
+					</li>
+					<li>
+						<a href="#">CNTV</a>
+					</li>
+					<li>
+						<a href="#">中青网</a>
+					</li>
+					<li>
+						<a href="#">中国台湾网</a>
+					</li>
+					<li>
+						<a href="#">央广网</a>
+					</li>
+					<li>
+						<a href="#">中国西藏网</a>
+					</li>
+					<li>
+						<a href="#">中新网</a>
+					</li>
+					<li>
+						<a href="#">中工网</a>
+					</li>
+					<li>
+						<a href="#">光明网</a>
+					</li>
+					<li>
+						<a href="#">百度</a>
+					</li>
+					<li>
+						<a href="#">新浪</a>
+					</li>
+					<li>
+						<a href="#">搜狐</a>
+					</li>
+					<li>
+						<a href="#">凤凰</a>
+					</li>
+					<li>
+						<a href="#">和讯</a>
+					</li>
+					<li>
+						<a href="#">腾讯</a>
+					</li>
+					<li>
+						<a href="#">国搜</a>
+					</li>
+					<li>
+						<a href="#">好搜</a>
+					</li>
+					<li>
+						<a href="#">金融界</a>
+					</li>
+					<br />
+					<li style="width:63px;height: 13px;">
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#">国家机关</a>
+					</li>
+					<li>
+						<a href="#">中国网信网</a>
+					</li>
+					<li>
+						<a href="#">中央纪委</a>
+					</li>
+					<li>
+						<a href="#">金融机构</a>
+					</li>
+					<li>
+						<a href="#">重点企业</a>
+					</li>
+					<li>
+						<a href="#">地方重点网站</a>
+					</li>
+					<li>
+						<a href="#">四川新闻网</a>
+					</li>
+					<li>
+						<a href="#">华龙网</a>
+					</li>
+					<li>
+						<a href="#">东北欧新闻网</a>
+					</li>
+					<li>
+						<a href="#">大众网</a>
+					</li>
+					<li>
+						<a href="#">大洋网</a>
+					</li>
+					<li>
+						<a href="#">齐鲁网</a>
+					</li>
+					<li>
+						<a href="#">东南网</a>
+					</li>
+					<li>
+						<a href="#">红网</a>
+					</li>
+					<li>
+						<a href="#">华声在线</a>
+					</li>
+					<li>
+						<a href="#">凯风网</a>
+					</li>
+					<li>
+						<a href="#">更多>></a>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+		<div class="bg">
+			<div class="footer_bottom">
+				<p style="padding-top: 10px;">
+					<a href="#">关于北疆在线</a>
+					<a href="#">-</a>
+					<a href="#">网站大事记</a>
+					<a href="#">-</a>
+					<a href="#" style="color: #663401;">网站诚聘</a>
+					<a href="#">-</a>
+					<a href="#">版权声明</a>
+					<a href="#">-</a>
+					<a href="#">互联网视听节目服务自律公约</a>
+					<a href="#">-</a>
+					<a href="#">广告服务</a>
+					<a href="#">-</a>
+					<a href="#">友情链接</a>
+					<a href="#">-</a>
+					<a href="#">纠错邮箱</a>
+				</p>
+				<p>
+					<a href="#">友情赞助：内蒙古青城网络科技有限公司</a>
+				</p>
+				<p class="footer_bottom_p">
+					<a href="#">北疆在线</a>
+					<a href="#"><img src="../img/footer/footer_bottom1.jpg" />版权所有</a>
+					<a href="#">蒙ICP证140554号</a>
+					<a href="#">网络传播视听节目许可证(0107190)</a>
+					<a href="#"><img src="../img/footer/footer_bottom2.jpg" />违法和不良信息举报中心</a>
+					<a href="#">举报电话:18510915000</a>
+				</p>
+				<p>
+					<a href="#">蒙公网安备110102000527</a>
+				</p>
+				<p>
+					<a href="#"><img src="../img/footer/footer_bottom3.jpg" /></a>
+				</p>
+
+			</div>
+		</div>
+			
+			
+		<!-- Swiper JS -->
+			<script src="../js/swiper-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			$("#title li").click(function() {
+				if($(this).className != "change") {
+					$(this).children().css("color", "white");
+					$(this).children().css("text-decoration", "none");
+					$(this).addClass("change");
+					$(this).siblings().removeClass("change");
+					$(this).siblings().children().css("color", "black");
+				}
+			});
+//			<!-- Initialize Swiper -->
+				var swiper = new Swiper('.swiper-container', {
+					pagination: '.swiper-pagination',
+					direction: 'vertical',
+					slidesPerView: 1,
+					paginationClickable: true,
+					spaceBetween: 30,
+					mousewheelControl: true,
+					autoplay: 2000,
+					speed: 2000,
+					 autoplayDisableOnInteraction: false
+				});
+				
+			//人物特效
+			$(".renwu_img").mouseover(function(){
+				$(this).removeClass("renwu_img_down");
+				$(this).addClass("renwu_img_on");
+				
+			});
+			$(".renwu_img").mouseout(function(){
+				$(this).removeClass("renwu_img_on");
+				$(this).addClass("renwu_img_down");
+				
+			});
+				
+				
+				
+				
+		</script>
+	</body>
+
+</html>

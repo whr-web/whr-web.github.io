@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="../css/toper.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
+		<link rel="stylesheet" href="../css/qunyinghuicui.css" />
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="../css/news1.css" />
+		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../js/toper.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-3.1.1.min.js"></script>
+		<script type="text/javascript" src="../js/swiper-3.3.1.min.js"></script>
+
+		<style>
+			html,
+			body {
+				position: relative;
+			}
+			.swiper-container {
+				border: 1px solid #CCCCCC;
+				border-radius: 20px;
+				width: 1000px;
+				height: 500px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+
+	<body onload="time()">
+		<!--头部-->
+		<div class="toper">
+			<div class="top_left">
+				<a href="#"><img src="../img/toper/logo.jpg" /></a>
+				<a class="titer" href="#">新闻网</a>
+			</div>
+			<div class="col-xs-4 sousuo" style="float: right; ">
+				<div class="input-group">
+					<input type="text" style="border: 2px solid #006833;" class="form-control" placeholder="Search">
+					<span class="input-group-btn">
+       				 	<button class="btn btn-default" style="border: 2px solid #006833;height: 34px;background:#006833 ;color: white;" type="button">搜&nbsp;索</button>
+    				 </span>
+
+				</div>
+
+			</div>
+			<div class="right_showtime">
+				<img style="float: left;" src="../img/toper/time.jpg" />
+				<div id="showtime" style="width: 250px;"></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="news_title">
+			<div class="title">
+				<ul id="title">
+					<li>
+						<a href="index.html">群英荟萃</a>
+					</li >
+					<li class="change">
+						<a  style="color: white;" href="chuangyezhe.html">创业者</a>
+					</li>
+					<li>
+						<a href="zhengmiankong.html">政面孔</a>
+					</li>
+					<li>
+						<a href="laoyibei.html">老一辈</a>
+					</li>
+					<li>
+						<a href="xinyibei.html">星一辈</a>
+					</li>
+					<li>
+						<a href="laodongkaimo.html">劳动楷模</a>
+					</li>
+					<li>
+						<a href="xianjinjiti.html">先进集体</a>
+					</li>
+					<li style="margin-left: 60px;background: white;">
+						<a href="#"><img style="float: left;" src="../img/toper/title1.jpg" /></a>
+					</li>
+					<li style="width: 40px; float: right;margin-right: 20px;border-left: 1px solid #eaeaea;background: white;">
+						<a href="../index.html"><img style="float: right;" src="../img/toper/main.jpg" /></a>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+		<!--内容-->
+		<div class="content">
+
+				
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="../img/群英荟萃/群英荟萃首页/首页_01.jpg"></div>
+							<div class="swiper-slide"><img src="../img/群英荟萃/群英荟萃首页/首页_02.jpg"></div>
+							<div class="swiper-slide"><img src="../img/群英荟萃/群英荟萃首页/首页_03.jpg"></div>
+							<div class="swiper-slide"><img src="../img/群英荟萃/群英荟萃首页/首页_04.jpg"></div>
+							<div class="swiper-slide"><img src="../img/群英荟萃/群英荟萃首页/首页_05.jpg"></div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="renwu">
+						<a class="news_cn" href="#">
+							<div class="renwu_img">
+								<img id="go" class="go" src="../img/群英荟萃/star.png"/>
+								<img src="../img/群英荟萃/创业者/创业者_01.jpg" />
+							</div>
+							<div class="renwu_cn" style="margin-left: 20px;">
+								<img id="gog" class="gog" src="../img/群英荟萃/star.png"/>
+								<h4>姓名：马化腾</h4>
+								<h4 style="line-height: 1.5em;">个人介绍：</h5>
+								<h4 style="line-height: 1.5em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;马化腾 ，男，1971年10月29日生于广东省汕头市潮南区。腾讯公司主要创办人之一，现担任腾讯公司控股董事会主席兼首席执行官；全国青联副主席。1998年马化腾与他的同学张志东“合资”注册了深圳腾讯计算机系统有限公司。之后又吸纳了三位股东：曾李青、许晨晔、陈一丹。作为一家没有风险资金介入就成立的软件公司，初期的每一笔支出都让马化腾和他的同伴心惊。</h4>
+							</div>
+						</a>
+						<a class="news_cn"  href="#">
+							<div class="renwu_cn">
+								<img id="gog" class="gog" src="../img/群英荟萃/star.png"/>
+								<h4>姓名：马云</h4>
+								<h4 style="line-height: 1.5em;">个人介绍：</h5>
+								<h4 style="line-height: 1.5em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;马云，男，1964年9月10日生于浙江省杭州市， 阿里巴巴集团主要创始人，现担任阿里巴巴集团董事局主席、日本软银董事、大自然保护协会中国理事会主席兼全球董事会成员、华谊兄弟董事、生命科学突破奖基金会董事。1988年毕业于杭州师范学院外语系，1995年创办中国第一家互联网商业信息发布网站“中国黄页”，1998年出任中国国际电子商务中心国富通信息技术发展有限公司总经理，1999年创办阿里巴巴，并担任阿里集团CEO、董事局主席。</h4>
+							</div>
+							<div class="renwu_img" style="margin-left: 20px;">
+								<img id="go" class="go" src="../img/群英荟萃/star.png"/>
+								<img src="../img/群英荟萃/创业者/创业者_02.jpg" />
+							</div>
+							
+						</a>
+						<a class="news_cn" href="#">
+							<div class="renwu_img">
+								<img id="go" class="go" src="../img/群英荟萃/star.png"/>
+								<img src="../img/群英荟萃/创业者/创业者_03.jpg" />
+							</div>
+							<div class="renwu_cn" style="margin-left: 20px;">
+								<img id="gog" class="gog" src="../img/群英荟萃/star.png"/>
+								<h4>姓名：陈天桥</h4>
+								<h4 style="line-height: 1.5em;">个人介绍：</h5>
+								<h4 style="line-height: 1.5em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;陈天桥（1973生5月——），出生于浙江绍兴。现任盛大网络董事会主席和首席执行官。第十一届、第十二届全国政协委员。同时担任全国工商联执委，上海市工商联副主席、上海市青联副主席等职务。2016年12月7日，盛大创始人亿万富豪陈天桥和雒芊芊夫妇向美捐助，捐赠1.15亿美元用于大脑研究，目的是帮助人类接受死亡。</h4>
+							</div>
+						</a>
+						<a class="news_cn"  href="#">
+							<div class="renwu_cn">
+								<img id="gog" class="gog" src="../img/群英荟萃/star.png"/>
+								<h4>姓名：曹国伟</h4>
+								<h4 style="line-height: 1.5em;">个人介绍：</h5>
+								<h4 style="line-height: 1.5em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;曹国伟，男，1965年11月生于上海，毕业于上海复旦大学新闻系。此后又获得了美国俄克拉荷马大学新闻学硕士及德州奥斯丁大学商业管理学院财务专业硕士。曹国伟1999年9月加入新浪，先后任主管财务的副总裁、首席财务官、首席运营官，总裁和CEO等职，2012年8月，担任新浪董事长，成为新浪历史上第一位董事长兼CEO。2014年底微博注册用户超过6亿，月活跃用户1.8亿。2014年4月，曹国伟带领微博在纳斯达克上市。曹国伟现在为新浪董事长兼首席执行官、微博董事长。</h4>
+							</div>
+							<div class="renwu_img" style="margin-left: 20px;">
+								<img id="go" class="go" src="../img/群英荟萃/star.png"/>
+								<img src="../img/群英荟萃/创业者/创业者_04.jpg" />
+							</div>
+							
+						</a>
+					</div>
+			</div>
+			
+		<div class="clear"></div>
+		<!--底部-->
+		<div class="footer">
+				
+			<div class="footer_top">
+				<ul>
+					<li>
+						<a href="#" style="color: #06427a;font-size: 14px;font-weight: bold;">友情链接:</a>
+					</li>
+					<li>
+						<a href="#">人民网</a>
+					</li>
+					<li>
+						<a href="#">新华网</a>
+					</li>
+					<li>
+						<a href="#">中国网</a>
+					</li>
+					<li>
+						<a href="#">中国日报网</a>
+					</li>
+					<li>
+						<a href="#">国际在线</a>
+					</li>
+					<li>
+						<a href="#">CNTV</a>
+					</li>
+					<li>
+						<a href="#">中青网</a>
+					</li>
+					<li>
+						<a href="#">中国台湾网</a>
+					</li>
+					<li>
+						<a href="#">央广网</a>
+					</li>
+					<li>
+						<a href="#">中国西藏网</a>
+					</li>
+					<li>
+						<a href="#">中新网</a>
+					</li>
+					<li>
+						<a href="#">中工网</a>
+					</li>
+					<li>
+						<a href="#">光明网</a>
+					</li>
+					<li>
+						<a href="#">百度</a>
+					</li>
+					<li>
+						<a href="#">新浪</a>
+					</li>
+					<li>
+						<a href="#">搜狐</a>
+					</li>
+					<li>
+						<a href="#">凤凰</a>
+					</li>
+					<li>
+						<a href="#">和讯</a>
+					</li>
+					<li>
+						<a href="#">腾讯</a>
+					</li>
+					<li>
+						<a href="#">国搜</a>
+					</li>
+					<li>
+						<a href="#">好搜</a>
+					</li>
+					<li>
+						<a href="#">金融界</a>
+					</li>
+					<br />
+					<li style="width:63px;height: 13px;">
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#">国家机关</a>
+					</li>
+					<li>
+						<a href="#">中国网信网</a>
+					</li>
+					<li>
+						<a href="#">中央纪委</a>
+					</li>
+					<li>
+						<a href="#">金融机构</a>
+					</li>
+					<li>
+						<a href="#">重点企业</a>
+					</li>
+					<li>
+						<a href="#">地方重点网站</a>
+					</li>
+					<li>
+						<a href="#">四川新闻网</a>
+					</li>
+					<li>
+						<a href="#">华龙网</a>
+					</li>
+					<li>
+						<a href="#">东北欧新闻网</a>
+					</li>
+					<li>
+						<a href="#">大众网</a>
+					</li>
+					<li>
+						<a href="#">大洋网</a>
+					</li>
+					<li>
+						<a href="#">齐鲁网</a>
+					</li>
+					<li>
+						<a href="#">东南网</a>
+					</li>
+					<li>
+						<a href="#">红网</a>
+					</li>
+					<li>
+						<a href="#">华声在线</a>
+					</li>
+					<li>
+						<a href="#">凯风网</a>
+					</li>
+					<li>
+						<a href="#">更多>></a>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+		<div class="bg">
+			<div class="footer_bottom">
+				<p style="padding-top: 10px;">
+					<a href="#">关于北疆在线</a>
+					<a href="#">-</a>
+					<a href="#">网站大事记</a>
+					<a href="#">-</a>
+					<a href="#" style="color: #663401;">网站诚聘</a>
+					<a href="#">-</a>
+					<a href="#">版权声明</a>
+					<a href="#">-</a>
+					<a href="#">互联网视听节目服务自律公约</a>
+					<a href="#">-</a>
+					<a href="#">广告服务</a>
+					<a href="#">-</a>
+					<a href="#">友情链接</a>
+					<a href="#">-</a>
+					<a href="#">纠错邮箱</a>
+				</p>
+				<p>
+					<a href="#">友情赞助：内蒙古青城网络科技有限公司</a>
+				</p>
+				<p class="footer_bottom_p">
+					<a href="#">北疆在线</a>
+					<a href="#"><img src="../img/footer/footer_bottom1.jpg" />版权所有</a>
+					<a href="#">蒙ICP证140554号</a>
+					<a href="#">网络传播视听节目许可证(0107190)</a>
+					<a href="#"><img src="../img/footer/footer_bottom2.jpg" />违法和不良信息举报中心</a>
+					<a href="#">举报电话:18510915000</a>
+				</p>
+				<p>
+					<a href="#">蒙公网安备110102000527</a>
+				</p>
+				<p>
+					<a href="#"><img src="../img/footer/footer_bottom3.jpg" /></a>
+				</p>
+
+			</div>
+		</div>
+			
+			
+		<!-- Swiper JS -->
+			<script src="../js/swiper-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			$("#title li").click(function() {
+				if($(this).className != "change") {
+					$(this).children().css("color", "white");
+					$(this).children().css("text-decoration", "none");
+					$(this).addClass("change");
+					$(this).siblings().removeClass("change");
+					$(this).siblings().children().css("color", "black");
+				}
+			});
+//			<!-- Initialize Swiper -->
+				var swiper = new Swiper('.swiper-container', {
+					pagination: '.swiper-pagination',
+					direction: 'vertical',
+					slidesPerView: 1,
+					paginationClickable: true,
+					spaceBetween: 30,
+					mousewheelControl: true,
+					autoplay: 2000,
+					speed: 2000,
+					 autoplayDisableOnInteraction: false
+				});
+				
+			//人物特效
+			$(".renwu_img").mouseover(function(){
+				$(this).removeClass("renwu_img_down");
+				$(this).addClass("renwu_img_on");
+				
+			});
+			$(".renwu_img").mouseout(function(){
+				$(this).removeClass("renwu_img_on");
+				$(this).addClass("renwu_img_down");
+				
+			});
+				
+				
+				
+				
+		</script>
+	</body>
+
+</html>
