@@ -1,0 +1,322 @@
+.content{
+	height: 1200px;
+	
+}
+.xinmeipaihang{
+	box-sizing: border-box;
+	position: relative;
+	width: 1000px;
+	height: 700px;
+	border: 1px solid red;
+}
+
+.ph_1,.ph_2,.ph_3,.ph_4,.ph_5{
+	border: 1px solid #CCCCCC;
+	border-radius: 15px;
+	box-shadow: 0px 0px 30px #CCCCCC;
+	width: 85px;
+	position: absolute;
+	bottom: 240px;
+	
+	
+}
+.ph_1{
+	height: 90px;
+	left: 270px;
+}
+.ph_2{
+
+	height: 120px;
+	left: 355px;
+}
+.ph_3{
+
+	height: 140px;
+	left: 440px;
+}
+.ph_4{
+
+	height: 160px;
+	left: 525px;
+}
+.ph_5{
+
+	height: 180px;
+	left: 610px;
+}
+.plane{
+	position: absolute;
+	bottom: 330px;
+	left: 270px;
+	transform: rotateX(-50deg);
+	animation: myPlane 6s;
+	-webkit-animation:  myPlane 6s;
+	-moz-animation:  myPlane 6s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	
+}
+@keyframes  myPlane {
+	0%{
+		bottom: 330px;
+		left: 270px;
+	}
+
+	100%{
+		bottom: 450px;
+		left: 660px;
+	}
+}
+
+.title_ph{
+	color: #666666;
+	padding:10px 30px;
+	position: absolute;
+	left: 250px;
+	top: 160px;
+	font-size: 30px;
+	box-shadow: 0px 0px 10px #CCCCCC ;
+}
+.battery{
+	position: absolute;
+	width: 40px;
+	height: 30px;
+	top: 140px;
+	right: 240px;
+	
+	animation: myBattery 2s;
+	-webkit-animation:  myBattery 2s;
+	-moz-animation:  myBattery 2s;
+	animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+@keyframes  myBattery {
+	0%{
+		background: url(../img/聚焦北疆/battery-low.png) no-repeat center;
+	}
+	50%{
+		background: url(../img/聚焦北疆/battery-medium.png) no-repeat center;
+	}
+	100%{
+		background: url(../img/聚焦北疆/battery-full.png) no-repeat center;
+	}
+}
+@-webkit-keyframes name{
+	0%{
+		background: url(../img/聚焦北疆/battery-low.png) no-repeat center;
+	}
+	50%{
+		background: url(../img/聚焦北疆/battery-medium.png) no-repeat center;
+	}
+	100%{
+		background: url(../img/聚焦北疆/battery-full.png) no-repeat center;
+	}
+}
+@-moz-keyframes name{
+	0%{
+		background: url(../img/聚焦北疆/battery-low.png) no-repeat center;
+	}
+	50%{
+		background: url(../img/聚焦北疆/battery-medium.png) no-repeat center;
+	}
+	100%{
+		background: url(../img/聚焦北疆/battery-full.png) no-repeat center;
+	}
+}
+.ph:hover{
+	cursor: pointer;
+	animation: myPh 1s;
+	-webkit-animation:  myPh 1s;
+	-moz-animation:  myPh 1s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;	
+	-moz-animation-fill-mode: forwards;
+}
+@keyframes  myPh {
+	100%{
+		width: 70px;
+	}
+}
+
+.phh{
+	animation: myPhh 1s;
+	-webkit-animation:  myPhh 1s;
+	-moz-animation:  myPhh 1s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;	
+	-moz-animation-fill-mode: forwards;
+}
+@keyframes  myPhh {
+	0%{
+		width: 70px;
+	}
+	100%{
+		width: 85px;
+	}
+}
+.ph span{
+	font-size: 16px;
+	margin-top: 50px;
+	display: block;
+	text-align: center;
+}
+.spantop{
+	animation: mysapntop 1s;
+	-webkit-animation:  mysapntop 1s;
+	-moz-animation:  mysapntop 1s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;	
+	-moz-animation-fill-mode: forwards;
+}
+@keyframes  mysapntop {
+	0%{
+		margin-top: 50px;
+	}
+	100%{
+		margin-top: 0px;
+	}
+}
+.spanbt{
+animation: mysapntobt 1s;
+	-webkit-animation:  mysapntobt 1s;
+	-moz-animation:  mysapntobt 1s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;	
+	-moz-animation-fill-mode: forwards;
+}
+@keyframes  mysapntobt {
+	0%{
+		margin-top: 0px;
+	}
+	100%{
+		margin-top: 50px;
+		
+	}
+}
+.pengyouquan{
+	width: 1000px;
+	border: 1px solid red;
+	padding: 10px 0px 200px 0px;
+	}
+.weipingtai{
+	width: 1000px;
+	border: 1px solid red;
+	height: 500px;
+}
+
+
+
+/*朋友圈特效css*/
+@keyframes rotate{
+	0%{
+		transform:rotateX(0deg) rotateY(0deg);
+	}
+	100%{
+		transform:rotateX(360deg) rotateY(360deg);
+	}
+}
+
+.wrap{
+	margin-left: 400px;
+	width: 200px;
+	height: 200px;
+	margin-top:100px;
+	perspective: 1000px; /* 视图距元素的距离 相当于摄像机 */
+}
+.cube{
+	width:200px;
+	height:200px;
+	position:relative;
+	color:#fff;
+	font-size:36px;
+	font-weight:bold;
+	text-align:center;
+	line-height:200px;
+	transform-style:preserve-3d; /* 默认flat 2D */
+	transform:rotateX(-30deg) rotateY(-70deg); 
+	animation:rotate 20s infinite linear; /*播放时间 播放次数为循环 缓动效果为匀速 */
+}
+.cube > div{
+	width:100%;
+	height:100%;
+	border:1px solid #fff;
+	position:absolute;
+	background-color:#333;
+	opacity:.6;
+	transition:transform 0.4s ease-in;
+}
+.cube .out-front{
+	transform: translateZ(100px);
+}
+.cube .out-back{
+	transform: translateZ(-100px) rotateY(180deg);
+}
+.cube .out-left{
+	transform: translateX(-100px) rotateY(-90deg);
+}
+.cube .out-right{ 
+	transform: translateX(100px) rotateY(90deg);
+}
+.cube .out-top{
+	transform: translateY(-100px) rotateX(90deg);
+}
+.cube .out-bottom{
+	transform: translateY(100px) rotateX(-90deg);
+}
+.cube > span{
+	display:block;
+	width:100px;
+	height:100px;
+	border:1px solid black;
+	background-color:#999;
+	position:absolute;
+	top:50px;
+	left:50px;
+}
+.cube .in-front{
+	transform: translateZ(50px);
+}
+.cube .in-back{
+	transform: translateZ(-50px) rotateY(180deg);
+}
+.cube .in-left{
+	transform: translateX(-50px) rotateY(-90deg);
+}
+.cube .in-right{
+	transform: translateX(50px) rotateY(90deg);
+}
+.cube .in-top{
+	transform: translateY(-50px) rotateX(90deg);
+}
+.cube .in-bottom{
+	transform: translateY(50px) rotateX(-90deg);
+}
+.wrap:hover .out-front{
+	transform: translateZ(200px);
+}
+.wrap:hover .out-back{
+	transform: translateZ(-200px) rotateY(180deg);
+}
+.wrap:hover .out-left{
+	transform: translateX(-200px) rotateY(-90deg);
+}
+.wrap:hover .out-right{
+	transform: translateX(200px) rotateY(90deg);
+}
+.wrap:hover .out-top{
+	transform: translateY(-200px) rotateX(90deg);
+}
+.wrap:hover .out-bottom{
+	transform: translateY(200px) rotateX(-90deg);
+}
+
+.pengyouquanwenhua,.weipingtai{
+	font-size: 30px;
+	width: 200px;
+	margin-left: 250px;
+	padding: 10px 20px;
+	box-shadow: 0px 0px 20px #CCCCCC;
+	margin-top: 50px;
+}
