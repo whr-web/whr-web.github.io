@@ -106,37 +106,37 @@
 				<ul id="content_cn_picture" class="content_cn_picture">
 					<li>
 						<a href="#">
-							<img   src="../img/news2/content_cn_picture1.jpg"/>
+							<img  value="1"  src="../img/news2/content_cn_picture1.jpg"/>
 						</a>
 						<a style="display: block;"  href="#">90后“女神老师”晒新照</a>
 					</li>
 					<li class="pic_midd">
 						<a href="#">
-							<img src="../img/news2/content_cn_picture2.jpg"/>
+							<img value="2" src="../img/news2/content_cn_picture2.jpg"/>
 						</a>
 						<a style="display: block;" href="#">瑞士邮局将采用无人机投递包裹</a>
 					</li>
 					<li class="pic_midd">
 						<a href="#">
-							<img src="../img/news2/content_cn_picture3.jpg"/>
+							<img value="3" src="../img/news2/content_cn_picture3.jpg"/>
 						</a>
 						<a style="display: block;" href="#">韩国举办健美锦标赛</a>
 					</li>
 					<li>
 						<a href="#">
-							<img src="../img/news2/content_cn_picture4.jpg"/>
+							<img value="4" src="../img/news2/content_cn_picture4.jpg"/>
 						</a>
 						<a style="display: block;" href="#">孙祥娇妻晒度假照</a>
 					</li>
 					<li class="pic_midd">
 						<a href="#">
-							<img src="../img/news2/content_cn_picture5.jpg"/>
+							<img value="5" src="../img/news2/content_cn_picture5.jpg"/>
 						</a>
 						<a style="display: block;" href="#">“花千骨”赵丽颖包包脸走红</a>
 					</li>
 					<li class="pic_midd">
 						<a href="#">
-							<img src="../img/news2/content_cn_picture6.jpg"/>
+							<img value="6" src="../img/news2/content_cn_picture6.jpg"/>
 						</a>
 						<a style="display: block;" href="#">韩国小姐选美大赛落幕</a>
 					</li>
@@ -301,15 +301,31 @@
 		     	$(this).removeClass("change_a1");
 		     });
 		     
-		     
+		     //图片放大特效
 			$("#content_cn_picture img").click(function(){
 				$("#max_pingmu").css("display","block");
 				$("#pt").attr('src',$(this).attr('src'));
-			})
+				
+			});
 			$("#close_g").click(function(){
 				$("#max_pingmu").css("display","none");
 			});
 			
+			//下一张，上一张特效
+			$("#next_g").click(function(){
+				alert($(this).attr('value'))
+				});
+//				if(i<=$("#content_cn_picture img").length){
+//						
+//					}
+//				
+//					$("#pt").attr('src','../img/news2/content_cn_picture'+(i)+'.jpg');
+//				
+				
+			
+			$("#pre_g").click(function(){
+				
+			});
 			
 			
 		</script>
