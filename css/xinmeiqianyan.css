@@ -6,8 +6,6 @@
 	box-sizing: border-box;
 	position: relative;
 	width: 1000px;
-	height: 700px;
-	border: 1px solid red;
 }
 
 .ph_1,.ph_2,.ph_3,.ph_4,.ph_5{
@@ -197,14 +195,8 @@ animation: mysapntobt 1s;
 }
 .pengyouquan{
 	width: 1000px;
-	border: 1px solid red;
 	padding: 10px 0px 200px 0px;
 	}
-.weipingtai{
-	width: 1000px;
-	border: 1px solid red;
-	height: 500px;
-}
 
 
 
@@ -244,7 +236,7 @@ animation: mysapntobt 1s;
 	border:1px solid #fff;
 	position:absolute;
 	background-color:#333;
-	opacity:.6;
+	opacity:1;
 	transition:transform 0.4s ease-in;
 }
 .cube .out-front{
@@ -312,7 +304,7 @@ animation: mysapntobt 1s;
 	transform: translateY(200px) rotateX(-90deg);
 }
 
-.pengyouquanwenhua,.weipingtai{
+.pengyouquanwenhua{
 	font-size: 30px;
 	width: 200px;
 	margin-left: 250px;
@@ -320,3 +312,33 @@ animation: mysapntobt 1s;
 	box-shadow: 0px 0px 20px #CCCCCC;
 	margin-top: 50px;
 }
+.dazuowei{
+	float: left;
+	width: 1000px;
+	box-sizing: border-box;
+}
+.weipingtai{
+	position: relative;
+	float: left;
+	width: 1000px;
+	height: 500px;
+	box-sizing: border-box;
+}
+    body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+    .swiper-container {
+        width: 800px;
+        height: 300px;
+        position: absolute;
+        margin-left: 100px;
+        margin-top:50px;
+    }
+    .swiper-slide {
+    	background: #CCCCCC;
+        background-position: center;
+        background-size: cover;
+    }
+    .swiper-slide  img{
+    	width: 100%;
+    }
